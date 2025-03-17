@@ -3,7 +3,7 @@ import {
   importProvidersFrom,
   provideZoneChangeDetection,
 } from '@angular/core';
-import { provideRouter, RouterModule } from '@angular/router';
+import { provideRouter, RouterModule, withHashLocation } from '@angular/router';
 
 import { routes } from './app.routes';
 import {
@@ -37,7 +37,9 @@ export const appConfig: ApplicationConfig = {
     BrowserAnimationsModule,
     NgxSpinnerModule,
     provideZoneChangeDetection({ eventCoalescing: true }),
-    provideRouter(routes),
+    provideRouter(routes,
+      withHashLocation()
+    ),
     provideClientHydration(withEventReplay()),
     provideHttpClient(
       withFetch(),
