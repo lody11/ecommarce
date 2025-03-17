@@ -1,0 +1,12 @@
+{
+  "home": "Home",
+  "products": "Products",
+  "cart": "Cart",
+  "categories": "Categories",
+  "checkout": "Checkout",
+  "login": "Login",
+  "register": "Register",
+  "brands": "Brand",
+  "Wishlist":"Wishlist",
+  "logout": "Logout"
+}
