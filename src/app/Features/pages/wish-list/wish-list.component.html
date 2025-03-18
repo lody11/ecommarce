@@ -22,10 +22,9 @@
                     </div>
                 </div>
 
-                <div class="text-center flex justify-evenly items-center">
+                <div class="text-center flex justify-between items-center px-2">
                     <button (click)="addProduct(product._id)" class="text-white bg-green-600 w-[60%] py-2 rounded">Add cart</button>
                    
-                    <a><i class="fa fa-heart" [style.color]="(checkifProductInWish(product._id)) ? '#ff0000' : 'text-gray-400'"></i></a>
                    
                     <a role="button" (click)="removeFromWish(product._id)"><i class="fas fa-trash-can"></i>  </a>
                 </div>

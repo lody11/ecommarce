@@ -38,7 +38,6 @@ export const appConfig: ApplicationConfig = {
     NgxSpinnerModule,
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes,
-      withHashLocation()
     ),
     provideClientHydration(withEventReplay()),
     provideHttpClient(
